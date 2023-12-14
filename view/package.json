@@ -1,0 +1,12 @@
+{
+  "name": "view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass:css" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
