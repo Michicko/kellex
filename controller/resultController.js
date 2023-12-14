@@ -1,5 +1,4 @@
 const Result = require("../model/resultModel");
-const APIFeatures = require("../utils/ApiFeatures");
 const AppError = require("../utils/AppError");
 const catchAsync = require("../utils/catchAsync");
 
@@ -15,10 +14,6 @@ exports.createResult = catchAsync(async (req, res, next) => {
 });
 
 exports.getResults = catchAsync(async (req, res, next) => {
-  // const features = new APIFeatures(Result.find(), req.query)
-  // .filter()
-  // .paginate();
-  // const results = await features.query;
   const results = await Result.find();
   const resultCounts = await Result.countDocuments();
 
