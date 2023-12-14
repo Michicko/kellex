@@ -41,7 +41,7 @@ app.use(express.static(path.join(__dirname, "/views")));
 
 
 app.get('/', (req, res, next) => {
-  res.sendFile("index.html");
+  res.sendFile('views/index.html', {root: __dirname })
 })
 
 app.get('/admin', (req, res, next) => {
