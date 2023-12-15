@@ -160,7 +160,7 @@ async function submitForm(admissionNumber){
   const modal = document.querySelector('#modal');
   const errorBox = document.querySelector('.error-box');
   try {
-    const res = await axios.get(`http://localhost:8002/api/v1/students/${admissionNumber}/check-student`);
+    const res = await axios.get(`/api/v1/students/${admissionNumber}/check-student`);
     if(res.data.status === 'success'){
        submitBtn.classList.remove('loading');
        const student = res.data.data
