@@ -5,7 +5,7 @@ const slugify = require("slugify");
 // multer storage
 const multerStorage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "./uploads/docs");
+    cb(null, "./public/uploads/docs");
   },
 
   filename: (req, file, cb) => {
@@ -13,7 +13,7 @@ const multerStorage = multer.diskStorage({
     req.file = file;
     const filename = `${slugify(req.body.admissionNumber)}.${ext}`
     req.filename = filename;
-    req.body.docUrl = `/uploads/docs/${filename}`;
+    req.body.docUrl = `/public/uploads/docs/${filename}`;
     cb(null, filename);
   },
 });

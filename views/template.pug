@@ -1,0 +1,197 @@
+DOCTYPE(html)
+html(lang='en')
+    head
+        link(rel='apple-touch-icon' sizes='180x180' href='./apple-touch-icon.png')
+        link(rel='icon' type='image/png' sizes='32x32' href='./favicon-32x32.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='./favicon-16x16.png')
+        link(rel='manifest' href='./site.webmanifest')
+        link(rel='mask-icon' href='./safari-pinned-tab.svg' color='#5bbad5')
+        meta(name='msapplication-TileColor' content='#ffffff')
+        meta(name='theme-color' content='#ffffff')
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='css/style.css')
+        title Kellex Schools, Benin - Creche, Children School, High School
+    body 
+
+        //- nav
+        nav.nav#nav
+            div.nav-sm
+                div.nav-contacts
+                    div.nav-contact
+                        svg.nav-contact-icon
+                            use(xlink:href="#icon-phone")
+                        p.nav-contact-info +234 8127778301
+
+                    span.sep.nav-contact-sep
+                    div.nav-contact
+                        svg.nav-contact-icon
+                            use(xlink:href="#icon-email")
+                        p.nav-contact-info admissions@kellexschools.com
+                    span.sep.nav-contact-sep |
+                    div.nav-contact
+                        svg.nav-contact-icon
+                            use(xlink:href="#icon-email")
+
+                        p.nav-contact-info contact@kellexschools.com
+                    a(href="#check-result" class="nav-result-btn") Check result
+
+            div.nav-main
+                a(href="/").logo
+                    img(srcset="assets/images/kellex-logo-xs.png 25w, assets/images/kellex-logo-sm.png 40w" sizes="(max-width: 568px) 25px, 40px" src="assets/images/kellex-logo-sm.png" alt="kellex logo").logo-img
+                    div.logo-box
+                        p.big Kellex schools
+                        p.small Nursery. primary. high school
+                ul.nav-list
+                    li.nav-item
+                        a(href="/").nav-link.active home
+                    li.nav-item.with-children
+                        span.nav-link-text About us
+                        svg.nav-icon
+                            use(xlink:href="#icon-arrow-down")
+                        ul.nav-inner-list
+                            li.nav-inner-item
+                                a(href="/who-we-are").nav-link who we are
+                            li.nav-inner-item
+                                a(href="/director-message").nav-link Director's message
+                            li.nav-inner-item
+                                a(href="/school-policy").nav-link school policy
+                    li.nav-item
+                        a(href="/admissions").nav-link admissions
+                    li.nav-item with-children
+                        span.nav-link-text Academics
+                        svg.nav-icon
+                            use(xlink:href="#icon-arrow-down")
+                        ul.nav-inner-list
+                            li.nav-inner-item
+                                <a href="/creche" class="nav-link">creche</a>
+                            li.nav-inner-item
+                                a(href="/nursery-primary").nav-link Nursery / primary
+                            li.nav-inner-item
+                                a(href="/high-school").nav-link high school
+                            li.nav-inner-item with-children
+                                span.nav-inner-link-text Online portal
+                                svg.nav-inner-icon
+                                    use(xlink:href="#icon-arrow-down")
+                                ul.nav-inner-parent
+                                    li.nav-inner-child
+                                        a(href="/parent").nav-link parent                
+                                    li.nav-inner-child
+                                        a(href="/student").nav-link student         
+                                    li.nav-inner-child
+                                        a(href="/online-testing").nav-link online tesing
+                    li.nav-item with-children
+                        span.nav-link-text Activities
+                        svg.nav-icon
+                            use(xlink:href="#icon-arrow-down")
+                        ul.nav-inner-list
+                            li.nav-inner-item
+                                a(href="/activities/nursery-primary").nav-link Nursery / primary
+
+                            li.nav-inner-item
+                                a(href="/activities/high-school").nav-link high school
+                    li.nav-item
+                        a(href="/gallery").nav-link gallery
+                    </li>
+                    li.nav-item
+                        a(href="/news").nav-link news
+                button.nav-btn
+                    svg.nav-btn-icon menu
+                        use(xlink:href="#icon-menu")
+                    svg.nav-btn-icon close
+                        use(xlink:href="#icon-close")
+                div.nav-mobile
+                    div.mobile-nav-list
+                        div.mobile-nav-item
+                            a(href="/").nav-link.active home
+                        div.mobile-nav-item.with-children
+                            div.seperator
+                                span.nav-link-text About us
+                            button.mobile-nav-btn
+                                svg(nav-icon mobile")
+                                    use(xlink:href="#icon-arrow-down")
+                            ul.mobile-nav-inner-list
+                                li.mobile-nav-inner-item
+                                    a(href="/who-we-are").nav-link who we are
+                                li.mobile-nav-inner-item
+                                    a(href="/director-message").nav-link Director's message
+                                li.mobile-nav-inner-item
+                                    a(href="/school-policy").nav-link school policy
+                        div.mobile-nav-item
+                            a(href="/admissions").nav-link admissions
+                        div.mobile-nav-item.with-children
+                            div.seperator
+                                span.nav-link-text Academics
+                                button.mobile-nav-btn
+                                    svg.nav-icon.mobile
+                                    use(xlink:href="#icon-arrow-down")
+                            div.mobile-nav-inner-list
+                                div.mobile-nav-inner-item
+                                    <a href="/creche" class="nav-link">creche</a>
+                                </div>
+                                div.mobile-nav-inner-item
+                                    a(href="/nursery-primary").nav-link Nursery / primary
+                                div.mobile-nav-inner-item
+                                    a(href="/high-school").nav-link high school
+                                div.mobile-nav-inner-item.with-children.with-inner-parent
+                                    div.seperator.with-inner-parent
+                                        span.nav-inner-link-text Online portal
+                                        button.mobile-nav-btn
+                                            svg.nav-inner-icon.mobile
+                                            use(xlink:href="#icon-arrow-down")
+                                    ul.mobile-nav-inner-parent
+                                        li.mobile-nav-inner-child
+                                            a(href="/parent").nav-link parent
+                                        li.mobile-nav-inner-child
+                                            a(href="/student").nav-link student
+                                        li.mobile-nav-inner-child
+                                            a(href="/online-testing").nav-link online tesing
+                    div.mobile-nav-item.with-children
+                        div.seperator
+                            span.nav-link-text Activities
+                            button.mobile-nav-btn
+                                svg.nav-icon.mobile
+                                use(xlink:href="#icon-arrow-down")
+                        ul.mobile-nav-inner-list
+                            li.mobile-nav-inner-item
+                                a(href="/activities/nursery-primary").nav-link Nursery / primary
+                            li.mobile-nav-inner-item
+                                a(href="/activities/high-school").nav-link high school
+                    div.mobile-nav-item
+                        a(href="/gallery").nav-link gallery
+                    div.mobile-nav-item
+                        a(href="/news").nav-link news
+
+        //- footer
+        footer.foote#footer
+            div.footer-logo-section
+                div.footer-logo-box
+                a(href="/").logo
+                    img(srcset="assets/images/kellex-logo-xs.png 25w, assets/images/kellex-logo-sm.png 40w" sizes="(max-width: 568px) 25px, 40px" src="assets/images/kellex-logo-sm.png" alt="kellex logo").logo-img
+                    div.logo-box.light
+                        p.big Kellex schools
+                        p.small Nursery. primary. high school
+                p.footer-text.mt-1 kellex Schools comprise of kellex Children School and kellex High School. The schools were established in 2023, by the dr Osa to provide complete and quality educatio.
+            div.footer-quicklinks
+                h5.footer-title.mb-2 quicklinks                
+                div.footer-links
+                a(href="/about/message-from-the-admin").footer-link.link message from the administrator
+                a(href="/about/school-policy").footer-link.link school policy
+                a(href="/about/who-we-are").footer-link.link who we are
+                a(href="/admission").footer-link.link admission
+                a(href="/gallery").footer-link.link gallery
+                a(href="/news").footer-link.link news
+            div.footer-academics
+                h5.footer-title.mb-2 academics
+                div.footer-links
+                a(href="/academics/nursery-primary").footer-link.link nursery  primary
+                a(href="/academics/high-school").footer-link.link high school
+                a(href="portal.kellexschools.com").footer-link.link student poral
+                a(href="portal.kellexschools.com").footer-link.link parent poral
+                a(href="/online-testing").footer-link.link online testing
+            div.footer-contacts
+                h5.footer-title.mb-2 Get in touch
+                div.contact-box
+                p.text Ogba Rd, Benin City 300102, Edo
+                p.text +234 8127778301
+                p.text admission@kellexschools.com

@@ -1,5 +1,5 @@
 const Student = require("../model/studentModel");
-const APIFeatures = require('../utils/APIFeatures');
+const APIFeatures = require("../utils/ApiFeatures");
 const AppError = require("../utils/AppError");
 const catchAsync = require("../utils/catchAsync");
 

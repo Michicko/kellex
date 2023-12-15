@@ -1,0 +1,186 @@
+doctype html
+html(lang='en')
+    head
+        link(rel='apple-touch-icon' sizes='180x180' href='./apple-touch-icon.png')
+        link(rel='icon' type='image/png' sizes='32x32' href='./favicon-32x32.png')
+        link(rel='icon' type='image/png' sizes='16x16' href='./favicon-16x16.png')
+        link(rel='manifest' href='./site.webmanifest')
+        link(rel='mask-icon' href='./safari-pinned-tab.svg' color='#5bbad5')
+        meta(name='msapplication-TileColor' content='#ffffff')
+        meta(name='theme-color' content='#ffffff')
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='css/style.css')
+        title Kellex Schools | #{title}
+    body
+        //- nav
+        include _nav
+
+        //- content
+        block content
+            header#header.header
+                div.carousel
+                    div.carousel-slides
+                        div.carousel-slide.slide-1.show
+                        div.carousel-slide.slide-2
+                        div.carousel-slide.slide-3
+                        div.carousel-slide.slide-4
+                        div.carousel-slide.slide-5
+                        div.carousel-slide.slide-6
+                        div.carousel-slide.slide-7
+                        div.carousel-slide.slide-8
+                    div.carousel-ctrls
+                        button.carousel-btn.prev
+                            svg.carousel-icon(aria-label='arrow left')
+                                use(xlink:href='#icon-arrow-left')
+                        button.carousel-btn.next(aria-label='arrow right')
+                            svg.carousel-icon
+                                use(xlink:href='#icon-arrow-right')
+            main#main.main
+                section.section-about.mb-4
+                    div.section-about-img
+                    h2.heading.heading-secondary.mb-1 Welcome To Kellex Schools
+                    div.about-container.text-section
+                        p.text.mb-1  Kellex schools comprise of Kellex Children School and Kellex High School. The schools were established by dr Osa in 2023 for the public benefit.
+                        p.text.mb-4 Kellex Schools is set up to give functional education to children right from the early stage up to high school. Our method is the Early Years Education system. Our motto is let your light so shine while our slogan is no child left behind. We are resetting the standard in education and hope to be a model to schools in Africa and to the world.
+                        a.about-btn.btn.btn-primary.outline(href='/about/who-we-are') Read more
+                section.section-intro.mb-4
+                    div.cards
+                        div.card.card-intro
+                            svg.card-intro-icon
+                                use(xlink:href='#icon-vision')
+                            h3.card-intro-title Our Vision
+                            p.card-intro-text
+                                | Kellex Schools are committed to providing complete and quality education with a view to turning out well-groomed scholars that will contribute immensely to our society.
+                        div.card.card-intro
+                            svg.card-intro-icon
+                                use(xlink:href='#icon-mission')
+                            h3.card-intro-title our mission
+                            p.card-intro-text
+                                | Our mission is to provide quality education in a safe and supportive environment that equips our diverse students with the knowledge, skills and attitudes to fulfill potential.
+                        div.card.card-intro
+                            svg.card-intro-icon
+                                use(xlink:href='#icon-academics')
+                            h3.card-intro-title academics
+                            p.card-intro-text
+                                | Kellex Schools comprise of Kellex Children School and Kellex High School. The schools were established in 2023 by the visionary, Dr Osa.
+                        div.card.card-intro
+                            svg.card-intro-icon
+                                use(xlink:href='#icon-admission')
+                            h3.card-intro-title ongoing admission
+                            p.card-intro-text
+                                | As we admit children for the 2022/2023 Academic Session, we stand on our longstanding principle of instilling value-character education and bench-marking the best of technology to deliver world-class education.
+                    div#check-result.result-checker
+                        h3.result-checker-heading Check result
+                        form#result-checker-form.result-checker-form
+                            input#admissionNumber.input.input-text(type='text' name='admissionNumber' placeholder='Admission Number')
+                            select#session.input.input-select(name='session')
+                                option(value='') Session
+                                option(value='2023/2024') 2023/2024
+                            select#term.input.input-select(name='term')
+                                option(value='') Term
+                                option(value='first-term') first term
+                            button.btn.btn-secondary.result-btn(type='submit')
+                                | Check result 
+                section.section-curricula-activities
+                    div.top.mb-6
+                        h2.heading.heading-secondary.center.mb-4.underline curriculum activities
+                        p.lead.center.color-b
+                            | We see the need for a child to also learn outside the classroom as it enhances quick grasp of what they are taught and gives them the platform for developing a hobby
+                    div.cards
+                        div.card-curriculum.c-1
+                            div.card-curriculum-body
+                                h4.card-curriculum-title
+                                    | Music &amp; drama
+                        div.card-curriculum.c-2
+                            div.card-curriculum-body
+                                h4.card-curriculum-title
+                                    | ict &amp; coding
+                        div.card-curriculum.c-3
+                            .card-curriculum-body
+                                h4.card-curriculum-title
+                                    | health &amp; science
+                section.section-features
+                    div.text-box
+                        h2.heading.heading-secondary.mb-2 We&apos;re making a difference
+                        p.text
+                            | Our goal is to discover and nurture the hidden potential in every student in our care. We offer a vast array of exciting activities and opportunities to help our students develop and become inquisitive.
+                    div.cards
+                        div.card-feature.feature-1
+                            svg.card-feature-icon
+                                use(xlink:href='#icon-curiculum')
+                            h4.card-feature-title Vast curriculum
+                            p.card-feature-text The goal of our school curriculum is to surpass a mere acquisition of knowledge
+                        div.card-feature.feature-2
+                            svg.card-feature-icon
+                                use(xlink:href='#icon-certified')
+                            h4.card-feature-title Certified teachers
+                            p.card-feature-text
+                                | We have the best teachers your child needs to help put their career on the right path
+                        div.card-feature.feature-3
+                            svg.card-feature-icon
+                                use(xlink:href='#icon-top-level')
+                            h4.card-feature-title top level classrooms
+                            p.card-feature-text All our classrooms are spacious and conducive for learning
+                        div.card-feature.feature-4
+                            svg.card-feature-icon
+                                use(xlink:href='#icon-secured-environment')
+                            h4.card-feature-title Secured environment
+                            p.card-feature-text
+                                | we have a well secured, comfortable and well-ordered environment for the learning process of students
+
+                section.section-news
+                    h3.heading.heading-secondary.mb-6.center.underline Latest news
+                    div.news-cards
+                        a.card-news(href='/news/exam-result')
+                            div.card-news-img-box
+                                img.card-news-img(src='/assets/images/kellex-logo-200.png' alt='news')
+                            div.card-news-body
+                                p.card-news-date February 10, 2023
+                                h4.card-news-title Kellex High School calendar for 1st term (2023/2024)
+                        a.card-news(href='/news/exam-result')
+                            div.card-news-img-box
+                                img.card-news-img(src='/assets/images/kellex-logo-200.png' alt='news')
+                            div.card-news-body
+                                p.card-news-date February 10, 2023
+                                h4.card-news-title Kellex High School 2023/2024 (JS 1) Admission List
+                        a.card-news(href='/news/exam-result')
+                            div.card-news-img-box
+                                img.card-news-img(src='/assets/images/kellex-logo-200.png' alt='news')
+                            div.card-news-body
+                                p.card-news-date February 10, 2023
+                                h4.card-news-title Kellex High School 2023/2024 (JS 1) Admission List
+
+                section.section-join
+                    h3.heading.heading-secondary.mb-6.center.underline Join us
+                    div.cards
+                        div.card-join
+                            div.card-join-img-box.j-1
+                            div.card-join-body
+                                a.card-join-link(href='/contact') inquire
+                        div.card-join
+                            div.card-join-img-box.j-2
+                            div.card-join-body
+                                a.card-join-link(href='/admission') apply
+                        div.card-join
+                            div.card-join-img-box.j-3
+                            div.card-join-body
+                             a.card-join-link(href='/about/who-we-are') take a tour
+
+
+    //- footer
+    include _footer
+    
+     //- modal
+    include _modal
+
+    //- scripts
+    iframe.pdf-viewer(src='', frameborder='0')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js')
+    svg.icons
+      use(xlink:href='/symbol-defs.svg')
+    script(defer='', src='svgxuse.js')
+    script(src='app.js')
+
+   
+

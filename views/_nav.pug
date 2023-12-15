@@ -1,0 +1,141 @@
+nav#nav.nav
+    .nav-sm
+        .nav-contacts
+            .nav-contact
+                svg.nav-contact-icon
+                    use(xlink:href='#icon-phone')
+                p.nav-contact-info +234 8127778301
+            span.sep.nav-contact-sep |
+            .nav-contact
+                svg.nav-contact-icon
+                    use(xlink:href='#icon-email')
+                p.nav-contact-info admissions@kellexschools.com
+            span.sep.nav-contact-sep |
+            .nav-contact
+                svg.nav-contact-icon
+                    use(xlink:href='#icon-email')
+                p.nav-contact-info contact@kellexschools.com
+        a.nav-result-btn(href='#check-result') Check result
+    .nav-main
+        a.logo(href='/')
+            img.logo-img(srcset='/assets/images/kellex-logo-xs.png 25w,\
+            /assets/images/kellex-logo-sm.png 40w', sizes='(max-width: 568px) 25px, 40px', src='/assets/images/kellex-logo-sm.png', alt='kellex logo')
+            .logo-box
+                p.big Kellex schools
+                p.small Nursery. primary. high school
+        ul.nav-list
+            li.nav-item
+                a.nav-link.active(href='/') home
+            li.nav-item.with-children
+                span.nav-link-text About us
+                svg.nav-icon
+                    use(xlink:href='#icon-arrow-down')
+                ul.nav-inner-list
+                    li.nav-inner-item
+                        a.nav-link(href='/who-we-are') who we are
+                    li.nav-inner-item
+                        a.nav-link(href='/director-message') Director&apos;s message
+                    li.nav-inner-item
+                        a.nav-link(href='/school-policy') school policy
+            li.nav-item
+                a.nav-link(href='/admissions') admissions
+            li.nav-item.with-children
+                span.nav-link-text Academics
+                svg.nav-icon
+                    use(xlink:href='#icon-arrow-down')
+                ul.nav-inner-list
+                    li.nav-inner-item
+                        a.nav-link(href='/creche') creche
+                    li.nav-inner-item
+                        a.nav-link(href='/nursery-primary') Nursery / primary
+                    li.nav-inner-item
+                        a.nav-link(href='/high-school') high school
+                    li.nav-inner-item.with-children
+                        span.nav-inner-link-text Online portal
+                        svg.nav-inner-icon
+                            use(xlink:href='#icon-arrow-down')
+                        ul.nav-inner-parent
+                            li.nav-inner-child
+                                a.nav-link(href='/parent') parent
+                            li.nav-inner-child
+                                a.nav-link(href='/student') student
+                            li.nav-inner-child
+                                a.nav-link(href='/online-testing') online tesing
+            li.nav-item.with-children
+                span.nav-link-text Activities
+                svg.nav-icon
+                    use(xlink:href='#icon-arrow-down')
+                ul.nav-inner-list
+                    li.nav-inner-item
+                        a.nav-link(href='/activities/nursery-primary') Nursery / primary
+                    li.nav-inner-item
+                        a.nav-link(href='/activities/high-school') high school
+            li.nav-item
+                a.nav-link(href='/gallery') gallery
+            li.nav-item
+                a.nav-link(href='/news') news
+        button.nav-btn
+            svg.nav-btn-icon.menu
+                use(xlink:href='#icon-menu')
+            svg.nav-btn-icon.close
+                use(xlink:href='#icon-close')
+        .nav-mobile
+            .mobile-nav-list
+                .mobile-nav-item
+                    a.nav-link.active(href='/') home
+                .mobile-nav-item.with-children
+                    .seperator
+                        span.nav-link-text About us
+                        button.mobile-nav-btn
+                            svg.nav-icon.mobile
+                                use(xlink:href='#icon-arrow-down')
+                    ul.mobile-nav-inner-list
+                        li.mobile-nav-inner-item
+                            a.nav-link(href='/who-we-are') who we are
+                        li.mobile-nav-inner-item
+                            a.nav-link(href='/director-message') Director&apos;s message
+                        li.mobile-nav-inner-item
+                            a.nav-link(href='/school-policy') school policy
+                .mobile-nav-item
+                    a.nav-link(href='/admissions') admissions
+                .mobile-nav-item.with-children
+                    .seperator
+                        span.nav-link-text Academics
+                        button.mobile-nav-btn
+                            svg.nav-icon.mobile
+                                use(xlink:href='#icon-arrow-down')
+                    .mobile-nav-inner-list
+                        .mobile-nav-inner-item
+                            a.nav-link(href='/creche') creche
+                        .mobile-nav-inner-item
+                            a.nav-link(href='/nursery-primary') Nursery / primary
+                        .mobile-nav-inner-item
+                            a.nav-link(href='/high-school') high school
+                        .mobile-nav-inner-item.with-children.with-inner-parent
+                            .seperator.with-inner-parent
+                                span.nav-inner-link-text Online portal
+                                button.mobile-nav-btn
+                                    svg.nav-inner-icon.mobile
+                                        use(xlink:href='#icon-arrow-down')
+                            ul.mobile-nav-inner-parent
+                                li.mobile-nav-inner-child
+                                    a.nav-link(href='/parent') parent
+                                li.mobile-nav-inner-child
+                                    a.nav-link(href='/student') student
+                                li.mobile-nav-inner-child
+                                    a.nav-link(href='/online-testing') online tesing
+                .mobile-nav-item.with-children
+                    .seperator
+                        span.nav-link-text Activities
+                        button.mobile-nav-btn
+                            svg.nav-icon.mobile
+                                use(xlink:href='#icon-arrow-down')
+                    ul.mobile-nav-inner-list
+                        li.mobile-nav-inner-item
+                            a.nav-link(href='/activities/nursery-primary') Nursery / primary
+                        li.mobile-nav-inner-item
+                            a.nav-link(href='/activities/high-school') high school
+                .mobile-nav-item
+                    a.nav-link(href='/gallery') gallery
+                .mobile-nav-item
+                    a.nav-link(href='/news') news
